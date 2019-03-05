@@ -63,9 +63,9 @@ namespace P5VectorsFramework
 
         public void SetMag(double a)
         {
-            _x = _x / a;
-            _y = _y / a;
-            _z = _z / a;
+            _x = _x / this.Length * a;
+            _y = _y / this.Length * a;
+            _z = _z / this.Length * a;
         }
 
         public static Vector operator + (Vector a, Vector b)
